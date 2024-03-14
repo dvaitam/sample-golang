@@ -37,11 +37,12 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		logRequest(r)
 		html_string := `<html> 
-  <a href='https://twitter.com/advaitam'> X/Twitter</a>
-    <a href='https://translate.google.com'> Google Translate</a>
-  <a href='https://gmail.com'>Google Gmail</a>
-  <a href='https://linkedin.com'>Microsoft LinkedIn</a>
-
+  <ul>
+  <li><a href='https://twitter.com/advaitam'> X/Twitter</a></li>
+    <li><a href='https://translate.google.com'> Google Translate</a></li>
+  <li><a href='https://gmail.com'>Google Gmail</a></li>
+  <li><a href='https://linkedin.com'>Microsoft LinkedIn</a></li>
+</ul>
   </html>
 		`
 		// fmt.Fprintf(w, "Hello! you've requested %s\n", r.URL.Path)
