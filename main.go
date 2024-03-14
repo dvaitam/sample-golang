@@ -36,17 +36,20 @@ func logRequest(r *http.Request) {
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		logRequest(r)
-		fmt.Fprintf(w, "Hello! you've requested %s\n", r.URL.Path)
-		parts := strings.Split(r.URL.Path, "/")
-		 if parts[1] == "१" {
-                        http.Redirect(w, r, "https://translate.google.com", http.StatusSeeOther)
-                } else if parts[1] == "२" {
-                        http.Redirect(w, r, "https://gmail.com", http.StatusSeeOther)
-                } else if parts[1] == "३" {
-                        http.Redirect(w, r, "https://linkedin.com", http.StatusSeeOther)
-                } else {
-                        http.Redirect(w,r, "https://twitter.com/advaitam", http.StatusSeeOther)
-                }
+		html_string := "<html> <a href='https://twitter.com/advaitam'> Twitter</a></html>"
+		// fmt.Fprintf(w, "Hello! you've requested %s\n", r.URL.Path)
+		fmt.Fprintf(w, "%s\n", html_string)
+		
+		// parts := strings.Split(r.URL.Path, "/")
+		//  if parts[1] == "१" {
+  //                       http.Redirect(w, r, "https://translate.google.com", http.StatusSeeOther)
+  //               } else if parts[1] == "२" {
+  //                       http.Redirect(w, r, "https://gmail.com", http.StatusSeeOther)
+  //               } else if parts[1] == "३" {
+  //                       http.Redirect(w, r, "https://linkedin.com", http.StatusSeeOther)
+  //               } else {
+  //                       http.Redirect(w,r, "https://twitter.com/advaitam", http.StatusSeeOther)
+  //               }
 	})
 
 	http.HandleFunc("/cached", func(w http.ResponseWriter, r *http.Request) {
