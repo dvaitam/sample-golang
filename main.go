@@ -36,7 +36,14 @@ func logRequest(r *http.Request) {
 func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		logRequest(r)
-		html_string := "<html> <a href='https://twitter.com/advaitam'> Twitter</a></html>"
+		html_string := `<html> 
+  <a href='https://twitter.com/advaitam'> X/Twitter</a>
+    <a href='https://translate.google.com'> Google Translate</a>
+  <a href='https://gmail.com'>Google Gmail</a>
+  <a href='https://linkedin.com'>Microsoft LinkedIn</a>
+
+  </html>
+		`
 		// fmt.Fprintf(w, "Hello! you've requested %s\n", r.URL.Path)
 		fmt.Fprintf(w, "%s\n", html_string)
 		
