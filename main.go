@@ -47,6 +47,7 @@ func main() {
   <li><a href='https://www.amazon.in'>General Amazon India</a></li>
   <li><a href='https://www.amazon.co.uk'>General Amazon UK</a></li>
   <li><a href='https://cloud.digitalocean.com/apps'>General Digital Ocean Apps</a></li>
+  <li><a href='https://mspssk.com/mod/bigbluebuttonbn/view.php?id=16354'>स्वाध्यायवेदी</a></li>
 </ul>
   </html>
 		`
