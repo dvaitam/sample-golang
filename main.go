@@ -45,6 +45,7 @@ func main() {
   <li><a href='https://gmail.com'>General Google Gmail</a></li>
   <li><a href='https://www.amazon.in'>General Amazon India</a></li>
   <li><a href='https://www.amazon.co.uk'>General Amazon UK</a></li>
+  <li><a href='https://cloud.digitalocean.com/apps'>General Digital Ocean Apps</a></li>
 </ul>
   </html>
 		`
