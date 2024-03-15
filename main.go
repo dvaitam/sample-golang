@@ -38,10 +38,10 @@ func main() {
 		logRequest(r)
 		html_string := `<html> 
   <ul>
-  <li><a href='https://twitter.com/advaitam'> X/Twitter</a></li>
-    <li><a href='https://translate.google.com'> Google Translate</a></li>
-  <li><a href='https://gmail.com'>Google Gmail</a></li>
-  <li><a href='https://linkedin.com'>Microsoft LinkedIn</a></li>
+  <li><a href='https://twitter.com/advaitam'>My X/Twitter</a></li>
+<li><a href='https://www.linkedin.com/in/anil-manchikatla/'>My Microsoft LinkedIn</a></li>
+    <li><a href='https://translate.google.com'>General Google Translate</a></li>
+  <li><a href='https://gmail.com'>General Google Gmail</a></li>
 </ul>
   </html>
 		`
