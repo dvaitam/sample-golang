@@ -62,6 +62,8 @@ func main() {
 			http.Redirect(w, r, "https://linkedin.com", http.StatusSeeOther)
 		} else if parts[1] == "४" {
 			http.Redirect(w, r, "https://twitter.com/advaitam", http.StatusSeeOther)
+		} else if parts[1] == "५" {
+			http.Redirect(w, r, "https://www.learnsanskrit.cc", http.StatusSeeOther)
 		} else {
 			fmt.Fprintf(w, "%s\n", html_string)
 			//  http.Redirect(w,r, "https://twitter.com/advaitam", http.StatusSeeOther)
