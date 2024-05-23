@@ -39,7 +39,6 @@ func main() {
 		html_string := `<html> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <ul>
-  <li><a href='https://twitter.com/advaitam'>My X/Twitter</a></li>
 <li><a href='https://www.linkedin.com/in/anil-manchikatla/'>My Microsoft LinkedIn</a></li>
 <li><a href='http://github.com/dvaitam'>My Microsoft GitHub</a></li>
     <li><a href='https://translate.google.com'>General Google Translate</a></li>
